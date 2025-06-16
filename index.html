@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power BI - Data Visualization | Microsoft Power Platform</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/voice-control.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/product-overview.css">
+    <link rel="stylesheet" href="css/faq.css">
+    <link rel="stylesheet" href="css/next-step.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/voice-control.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/faq.js"></script>
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-left">
+                <a href="#" class="navbar-brand">
+                    <img src="images/Microsoft_logo.svg.png" alt="Microsoft Logo" class="microsoft-logo">
+                    Microsoft
+                </a>
+                <span class="divider">|</span>
+                <a href="#" class="navbar-brand">Power Platform</a>
+                <span class="divider">|</span>
+                <a href="#" class="navbar-brand">Power BI</a>
+            </div>
+            <div class="nav-center">
+                <ul class="nav-links">
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">About Power Platform <span class="dropdown-icon"></span></a>
+                        <div class="dropdown-menu">
+                            <a href="get-started.html" class="dropdown-item">Get Started</a>
+                            <a href="guided-tours.html" class="dropdown-item">Guided Tours</a>
+                            <a href="ai.html" class="dropdown-item">Artificial Intelligence (AI)</a>
+                            <a href="security-governance.html" class="dropdown-item">Security & Governance</a>
+                            <a href="dataverse.html" class="dropdown-item">Dataverse</a>
+                            <a href="connectors.html" class="dropdown-item">Connectors</a>
+                            <a href="templates.html" class="dropdown-item">Templates</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">Solutions <span class="dropdown-icon"></span></a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Business solutions</a>
+                            <a href="#" class="dropdown-item">Industry solutions</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">Products <span class="dropdown-icon"></span></a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Power BI</a>
+                            <a href="#" class="dropdown-item">Power Apps</a>
+                            <a href="#" class="dropdown-item">Power Automate</a>
+                            <a href="#" class="dropdown-item">Power Virtual Agents</a>
+                            <a href="#" class="dropdown-item">Power Pages</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="#plans" class="nav-link">Pricing</a></li>
+                    <li class="nav-item"><a href="#interoperability-section" class="nav-link">Interoperability</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Partners</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">Resources <span class="dropdown-icon"></span></a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Documentation</a>
+                            <a href="#" class="dropdown-item">Support</a>
+                            <a href="#" class="dropdown-item">Community</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <a href="#pricing" class="btn btn-outline">Buy now</a>
+                <a href="#pricing" class="btn btn-dark">Start free</a>
+                <a href="signin.html" class="btn btn-outline">Sign in</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Power BI</h1>
+                <h2 class="hero-subtitle">Uncover powerful insights and turn them into impact</h2>
+                
+                <div class="hero-card">
+                    <div class="hero-card-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <rect width="40" height="40" rx="8" fill="#FFB900"/>
+                            <path d="M12 28V16h4v12h-4zm6-16v16h4V12h-4zm6 8v8h4v-8h-4z" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="hero-card-content">
+                        <h3>Connect to and visualize any data, and seamlessly infuse visuals into the apps you use every day.</h3>
+                    </div>
+                </div>
+                
+                <a href="dashboard.html" class="btn btn-primary btn-large">Get started</a>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="gradient-shape"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Navigation Section -->
+    <nav class="main-nav">
+      <a href="#power-bi-product-overview" class="main-nav-link">Product overview</a>
+      <a href="#use-cases" class="main-nav-link">Use cases</a>
+      <a href="#research-news" class="main-nav-link">Research and news</a>
+      <a href="#plans" class="main-nav-link">Pricing</a>
+      <a href="#interoperability-section" class="main-nav-link">Interoperability</a>
+      <a href="#data-security-section" class="main-nav-link">Security</a>
+      <a href="#resources-section" class="main-nav-link">Resources</a>
+      <a href="signin.html" class="main-nav-link">Sign in</a>
+      <a href="dashboard.html" class="main-nav-link">Try for free</a>
+    </nav>
+
+    <!-- Product Detail Sections Container -->
+    <section id="product-detail-sections">
+        <!-- Product Overview Section for Power BI -->
+        <section id="power-bi-product-overview" class="product-overview">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">PRODUCT OVERVIEW</span>
+                <h2 class="section-title">Create a data-driven culture with BI for all</h2>
+            </div>
+            
+                <div class="product-capabilities-section">
+                    <div class="capabilities-tabs">
+                        <button class="capability-tab active" data-target-content="power-bi-capabilities-content">Power BI capabilities</button>
+                        <button class="capability-tab" data-target-content="why-power-bi-capabilities-content">Why Power BI</button>
+                        <button class="capability-tab" data-target-content="copilot-product-overview-content">Copilot in Microsoft Fabric</button>
+                        <button class="capability-tab" data-target-content="power-bi-fabric-content">Power BI in Fabric</button>
+                        <button class="capability-tab" data-target-content="power-bi-pro-content">Power BI Pro</button>
+                        <button class="capability-tab" data-target-content="free-account-content">Free account</button>
+                    </div>
+
+                    <div class="dynamic-capability-content-wrapper">
+                        <!-- Content for Power BI Capabilities -->
+                        <div id="power-bi-capabilities-content" class="capabilities-content">
+                            <div class="insights-container">
+                                <div class="insight-item expanded">
+                                    <h3 class="insight-title">Uncover insights with AI <span class="toggle-icon">^</span></h3>
+                                    <div class="insight-description">
+                                        <p>Turn your data into visuals with advanced data-analysis tools, AI capabilities, and a user-friendly report-creation tool.</p>
+                                        <a href="#" class="read-more">Take a guided tour</a>
+                                    </div>
+                                </div>
+                                <div class="insight-item">
+                                    <h3 class="insight-title">Bring all your data together <span class="toggle-icon">v</span></h3>
+                                    <div class="insight-description">
+                                        <p>Connect to hundreds of data sources, from Excel and SQL databases to cloud services and web APIs, bringing all your data together in one place.</p>
+                                        <a href="#" class="read-more">Learn more</a>
+                                    </div>
+                                </div>
+                                <div class="insight-item">
+                                    <h3 class="insight-title">Turn insights into impact <span class="toggle-icon">v</span></h3>
+                                    <div class="insight-description">
+                                        <p>Share dashboards and reports with your team, collaborate in real-time, and make data-driven decisions together.</p>
+                                        <a href="#" class="read-more">Discover how</a>
+                                    </div>
+                                </div>
+                                <div class="insight-item">
+                                    <h3 class="insight-title">Empower every data team <span class="toggle-icon">v</span></h3>
+                                    <div class="insight-description">
+                                        <p>Provide your data professionals with the tools they need to build and manage comprehensive business intelligence solutions.</p>
+                                        <a href="#" class="read-more">See features</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="dashboard-image-container">
+                                <img id="insight-dynamic-image" src="./images/image.png" alt="Power BI Dashboard Preview" class="dashboard-image">
+                            </div>
+                        </div>
+
+                        <!-- Content for Why Power BI -->
+                        <div id="why-power-bi-capabilities-content" class="capabilities-content" style="display: none;">
+                            <div class="insights-container">
+                                <div class="insight-item expanded">
+                                    <h3 class="insight-title">Seamlessly scale as needed <span class="toggle-icon">^</span></h3>
+                                    <div class="insight-description">
+                                        <p>Transform petabytes with enterprise-grade ingestion and semantic modeling in a tool that can scale across thousands of users.</p>
+                                        <a href="#" class="read-more">Learn more</a>
+                                    </div>
+                                </div>
+                                <div class="insight-item">
+                                    <h3 class="insight-title">Share insights everywhere <span class="toggle-icon">v</span></h3>
+                                    <div class="insight-description">
+                                        <p>Share dashboards and reports with your team, collaborate in real-time, and make data-driven decisions together.</p>
+                                        <a href="#" class="read-more">Discover how</a>
+                                    </div>
+                                </div>
+                                <div class="insight-item">
+                                    <h3 class="insight-title">Get more done with AI <span class="toggle-icon">v</span></h3>
+                                    <div class="insight-description">
+                                        <p>Leverage artificial intelligence to discover hidden patterns, generate insights, and get answers to your questions.</p>
+                                        <a href="#" class="read-more">See features</a>
+                                    </div>
+                                </div>
+                                <div class="insight-item">
+                                    <h3 class="insight-title">Govern and protect data <span class="toggle-icon">v</span></h3>
+                                    <div class="insight-description">
+                                        <p>Ensure your data is secure and compliant with industry standards and regulations.</p>
+                                        <a href="#" class="read-more">Learn about security</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="dashboard-image-container">
+                                <img id="why-power-bi-dynamic-image" src="./images/why.png" alt="Why Power BI Dashboard Preview" class="dashboard-image">
+                            </div>
+                        </div>
+
+                        <!-- Content for Copilot in Microsoft Fabric -->
+                        <div id="copilot-product-overview-content" class="capabilities-content" style="display: none;">
+                            <div class="insights-container">
+                                <div class="insight-item expanded">
+                                    <h3 class="insight-title">Overview <span class="toggle-icon">^</span></h3>
+                                    <div class="insight-description">
+                                        <p>Get a comprehensive overview of Copilot's capabilities within Microsoft Fabric, understanding its core functionalities and benefits.</p>
+                                        <a href="#" class="read-more">Learn more</a>
+                                    </div>
+                                </div>
+                                <div class="insight-item">
+                                    <h3 class="insight-title">Create reports in seconds <span class="toggle-icon">v</span></h3>
+                                    <div class="insight-description">
+                                        <p>Leverage AI to quickly generate and customize reports, saving time and effort in your data analysis workflow.</p>
+                                        <a href="#" class="read-more">Watch demo</a>
+                                    </div>
+                                </div>
+                                <div class="insight-item">
+                                    <h3 class="insight-title">Quickly explore and summarize your data <span class="toggle-icon">v</span></h3>
+                                    <div class="insight-description">
+                                        <p>Understand your data faster by adding insightful text summaries, and even tailor the tone, scope, and style of narratives.</p>
+                                        <a href="#" class="read-more">Watch a demo</a>
+                                    </div>
+                                </div>
+                                <div class="insight-item">
+                                    <h3 class="insight-title">Write DAX queries <span class="toggle-icon">v</span></h3>
+                                    <div class="insight-description">
+                                        <p>Utilize AI assistance to write complex DAX queries with ease, empowering you to perform advanced calculations and data transformations.</p>
+                                        <a href="#" class="read-more">Explore DAX</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="dashboard-image-container">
+                                <img id="copilot-dynamic-image" src="./images/image.png" alt="Copilot Dashboard Preview" class="dashboard-image">
+                            </div>
+                        </div>
+
+                        <!-- Content for Power BI in Fabric -->
+                        <div id="power-bi-fabric-content" class="capabilities-content" style="display: none;">
+                            <div class="insights-container">
+                                <div class="insight-item expanded">
+                                    <h3 class="insight-title">Overview <span class="toggle-icon">^</span></h3>
+                                    <div class="insight-description">
+                                        <p>Enable users without paid licenses to interact with reports and access the rest of your Microsoft Fabric workloads.</p>
+                                        <a href="#" class="read-more">Learn more</a>
+                                    </div>
+                                </div>
+                                <div class="insight-item">
+                                    <h3 class="insight-title">Unify your data estate <span class="toggle-icon">v</span></h3>
+                                    <div class="insight-description">
+                                        <p>Establish an open data hub with OneLake to help data engineers connect and curate data from different sources.</p>
+                                        <a href="#" class="read-more">Learn more</a>
+                                    </div>
+                                </div>
+                                <div class="insight-item">
+                                    <h3 class="insight-title">Transform your data <span class="toggle-icon">v</span></h3>
+                                    <div class="insight-description">
+                                        <p>Employ the suite of Microsoft Fabric workloads to integrate, process, analyze, monitor, and visualize your data.</p>
+                                        <a href="#" class="read-more">See fabric scenarios</a>
+                                    </div>
+                                </div>
+                                <div class="insight-item">
+                                    <h3 class="insight-title">Unify data governance <span class="toggle-icon">v</span></h3>
+                                    <div class="insight-description">
+                                        <p>Responsibly connect people and data using an open and scalable solution that gives data stewards additional control.</p>
+                                        <a href="#" class="read-more">Learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="dashboard-image-container">
+                                <img id="power-bi-fabric-dynamic-image" src="./images/fabric-overview.png" alt="Power BI Fabric Dashboard Preview" class="dashboard-image">
+                            </div>
+                        </div>
+
+                        <!-- Content for Power BI Pro -->
+                        <div id="power-bi-pro-content" class="capabilities-content" style="display: none;">
+                            <div class="insights-container">
+                                <div class="insight-item expanded">
+                                    <h3 class="insight-title">Overview <span class="toggle-icon">^</span></h3>
+                                    <div class="insight-description">
+                                        <p>License individual users with modern, self-service analytics for publishing reports and viewing content.</p>
+                                        <a href="#" class="read-more">Learn more</a>
+                                    </div>
+                                </div>
+                                <div class="insight-item">
+                                    <h3 class="insight-title">Self-service BI  <span class="toggle-icon">v</span></h3>
+                                    <div class="insight-description">
+                                        <p>Enable users to create reports and publish them to share with their coworkers, helping to foster self-service BI.</p>
+                                        <a href="#" class="read-more">Learn more</a>
+                                    </div>
+                                </div>
+                                <div class="insight-item">
+                                    <h3 class="insight-title">Microsoft 365 E5<span class="toggle-icon">v</span></h3>
+                                    <div class="insight-description">
+                                        <p>Get Power BI Pro with other Microsoft 365 apps and industry-leading Microsoft security for one low price per user.</p>
+                                        <a href="#" class="read-more">Learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dashboard-image-container">
+                                <img id="power-bi-pro-dynamic-image" src="./images/fabric-pro-overview.png" alt="Power BI Pro Dashboard Preview" class="dashboard-image">
+                            </div>
+                        </div>
+
+                        <!-- Content for Free account -->
+                        <div id="free-account-content" class="capabilities-content" style="display: none;">
+                            <div class="insights-container">
+                                <div class="insight-item expanded">
+                                    <h3 class="insight-title">Create a free account<span class="toggle-icon">^</span></h3>
+                                    <div class="insight-description">
+                                        <p>Author reports for your own use or view Power BI content hosted in a Power BI Premium or Microsoft Fabric shared capacity.</p>
+                                        <a href="#" class="read-more">Learn more</a>
+                                    </div>
+                                </div>
+                                <div class="insight-item">
+                                    <h3 class="insight-title">Power BI Desktop<span class="toggle-icon">v</span></h3>
+                                    <div class="insight-description">
+                                        <p>Use the free app to connect, model, and visualize data with an easy-to-use report canvas and hundreds of visuals.</p>
+                                        <a href="#" class="read-more">Learn more</a>
+                                    </div>
+                                </div>
+                                <div class="insight-item">
+                                    <h3 class="insight-title">Activate your free trial<span class="toggle-icon">v</span></h3>
+                                    <div class="insight-description">
+                                        <p>Sign up for the Microsoft Fabric free trial to explore the full suite of services—including everything Power BI has to offer.</p>
+                                        <a href="#" class="read-more">Learn more</a>
+                                    </div>
+                                </div>
+                                <div class="insight-item">
+                                    <h3 class="insight-title">Sharpen your skills<span class="toggle-icon">v</span></h3>
+                                    <div class="insight-description">
+                                        <p>Get step-by-step guidance and explore key Power BI capabilities by taking Microsoft training courses.</p>
+                                        <a href="#" class="read-more">Learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dashboard-image-container">
+                                <img id="free-account-dynamic-image" src="./images/create-free-account.png" alt="Free Account Dashboard Preview" class="dashboard-image">
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Use Cases Section -->
+        <section id="use-cases" class="use-cases-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">USE CASES</span>
+                    <h2 class="section-title-large">See what you can do with Power BI</h2>
+                </div>
+                <div class="use-case-grid">
+                    <div class="use-case-card">
+                        <div class="use-case-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24 4C12.954 4 4 12.954 4 24s8.954 20 20 20 20-8.954 20-20S35.046 4 24 4zm0 36c-8.837 0-16-7.163-16-16s7.163-16 16-16 16 7.163 16 16-7.163 16-16 16z" fill="#B0A4E3"/>
+                                <path d="M24 12c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 20c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z" fill="#624BB8"/>
+                                <path d="M24 16c-4.418 0-8 3.582-8 8s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8zm0 12c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4z" fill="#A4262C"/>
+                                <path d="M24 20c-2.209 0-4 1.791-4 4s1.791 4 4 4 4-1.791 4-4-1.791-4-4-4z" fill="#FFFFFF"/>
+                                <path d="M24 24c0-1.105.895-2 2-2h4c1.105 0 2 .895 2 2v4c0 1.105-.895 2-2 2h-4c-1.105 0-2-.895-2-2v-4z" fill="#424083"/>
+                                <path d="M24 24c0-1.105-.895-2-2-2h-4c-1.105 0-2 .895-2 2v4c0 1.105.895 2 2 2h4c1.105 0 2-.895 2-2v-4z" fill="#424083"/>
+                                <path d="M24 24c1.105 0 2-.895 2-2V8c0-1.105-.895-2-2-2h-4c-1.105 0-2 .895-2 2v14c0 1.105.895 2 2 2h4z" fill="#424083"/>
+                                <path d="M24 24c-1.105 0-2-.895-2-2V8c0-1.105.895-2 2-2h4c1.105 0 2 .895 2 2v14c0 1.105-.895 2-2 2h-4z" fill="#424083"/>
+                                <path d="M24 24c1.105 0 2 .895 2 2v4c0 1.105-.895 2-2 2h-4c-1.105 0-2-.895-2-2v-4z" fill="#FFC600"/>
+                                <path d="M24 24c-1.105 0-2-.895-2-2h-4c-1.105 0-2 .895-2 2v4c0 1.105.895 2 2 2h4c1.105 0 2-.895 2-2v-4z" fill="#FFC600"/>
+                                <path d="M24 24c1.105 0 2 .895 2 2V8c0-1.105-.895-2-2-2h-4c-1.105 0-2 .895-2 2v14c0 1.105.895 2 2 2h4z" fill="#FFC600"/>
+                                <path d="M24 24c-1.105 0-2-.895-2-2V8c0-1.105.895-2 2-2h4c1.105 0 2 .895 2 2v14c0 1.105-.895 2-2 2h-4z" fill="#FFC600"/>
+                                <path d="M24 24c0-1.105.895-2 2-2h4c1.105 0 2 .895 2 2v4c0 1.105-.895 2-2 2h-4c-1.105 0-2-.895-2-2v-4z" fill="#0078D4"/>
+                                <path d="M24 24c-1.105 0-2-.895-2-2h-4c-1.105 0-2 .895-2 2v4c0 1.105.895 2 2 2h4c1.105 0 2-.895 2-2v-4z" fill="#0078D4"/>
+                                <path d="M24 24c1.105 0 2 .895 2 2V8c0-1.105-.895-2-2-2h-4c-1.105 0-2 .895-2 2v14c0 1.105.895 2 2 2h4z" fill="#0078D4"/>
+                                <path d="M24 24c-1.105 0-2-.895-2-2V8c0-1.105.895-2 2-2h4c1.105 0 2 .895 2 2v14c0 1.105-.895 2-2 2h-4z" fill="#0078D4"/>
+                            </svg>
+                        </div>
+                        <h3 class="use-case-title">Establish a governed source of truth</h3>
+                        <p class="use-case-description">Connect all your disparate data sources in the same environment to establish a single source of truth for all your data.</p>
+                        <a href="#" class="learn-more-link">Learn more</a>
+                    </div>
+                    <div class="use-case-card">
+                        <div class="use-case-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24 4C12.954 4 4 12.954 4 24s8.954 20 20 20 20-8.954 20-20S35.046 4 24 4zm0 36c-8.837 0-16-7.163-16-16s7.163-16 16-16 16 7.163 16 16-7.163 16-16 16z" fill="#B0A4E3"/>
+                                <path d="M24 12c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 20c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z" fill="#624BB8"/>
+                                <path d="M24 16c-4.418 0-8 3.582-8 8s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8zm0 12c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4z" fill="#A4262C"/>
+                                <path d="M24 20c-2.209 0-4 1.791-4 4s1.791 4 4 4 4-1.791 4-4-1.791-4-4-4z" fill="#FFFFFF"/>
+                                <path d="M24 24c0-1.105.895-2 2-2h4c1.105 0 2 .895 2 2v4c0 1.105-.895 2-2 2h-4c-1.105 0-2-.895-2-2v-4z" fill="#424083"/>
+                                <path d="M24 24c0-1.105-.895-2-2-2h-4c-1.105 0-2 .895-2 2v4c0 1.105.895 2 2 2h4c1.105 0 2-.895 2-2v-4z" fill="#424083"/>
+                                <path d="M24 24c1.105 0 2-.895 2-2V8c0-1.105-.895-2-2-2h-4c-1.105 0-2 .895-2 2v14c0 1.105.895 2 2 2h4z" fill="#424083"/>
+                                <path d="M24 24c-1.105 0-2-.895-2-2V8c0-1.105.895-2 2-2h4c1.105 0 2 .895 2 2v14c0 1.105-.895 2-2 2h-4z" fill="#424083"/>
+                                <path d="M24 24c1.105 0 2 .895 2 2v4c0 1.105-.895 2-2 2h-4c-1.105 0-2-.895-2-2v-4z" fill="#FFC600"/>
+                                <path d="M24 24c-1.105 0-2-.895-2-2h-4c-1.105 0-2 .895-2 2v4c0 1.105.895 2 2 2h4c1.105 0 2-.895 2-2v-4z" fill="#FFC600"/>
+                                <path d="M24 24c1.105 0 2 .895 2 2V8c0-1.105-.895-2-2-2h-4c-1.105 0-2 .895-2 2v14c0 1.105.895 2 2 2h4z" fill="#FFC600"/>
+                                <path d="M24 24c-1.105 0-2-.895-2-2V8c0-1.105.895-2 2-2h4c1.105 0 2 .895 2 2v14c0 1.105-.895 2-2 2h-4z" fill="#FFC600"/>
+                                <path d="M24 24c0-1.105.895-2 2-2h4c1.105 0 2 .895 2 2v4c0 1.105-.895 2-2 2h-4c-1.105 0-2-.895-2-2v-4z" fill="#0078D4"/>
+                                <path d="M24 24c-1.105 0-2-.895-2-2h-4c-1.105 0-2 .895-2 2v4c0 1.105.895 2 2 2h4c1.105 0 2-.895 2-2v-4z" fill="#0078D4"/>
+                                <path d="M24 24c1.105 0 2 .895 2 2V8c0-1.105-.895-2-2-2h-4c-1.105 0-2 .895-2 2v14c0 1.105.895 2 2 2h4z" fill="#0078D4"/>
+                                <path d="M24 24c-1.105 0-2-.895-2-2V8c0-1.105.895-2 2-2h4c1.105 0 2 .895 2 2v14c0 1.105-.895 2-2 2h-4z" fill="#0078D4"/>
+                            </svg>
+                        </div>
+                        <h3 class="use-case-title">Unify enterprise scale and self service</h3>
+                        <p class="use-case-description">Combine enterprise-scale and self-service BI to drive insights and innovation at every level of your organization.</p>
+                        <a href="#" class="learn-more-link">Learn more</a>
+                    </div>
+                    <div class="use-case-card">
+                        <div class="use-case-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24 4C12.954 4 4 12.954 4 24s8.954 20 20 20 20-8.954 20-20S35.046 4 24 4zm0 36c-8.837 0-16-7.163-16-16s7.163-16 16-16 16 7.163 16 16-7.163 16-16 16z" fill="#B0A4E3"/>
+                                <path d="M24 12c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 20c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z" fill="#624BB8"/>
+                                <path d="M24 16c-4.418 0-8 3.582-8 8s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8zm0 12c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4z" fill="#A4262C"/>
+                                <path d="M24 20c-2.209 0-4 1.791-4 4s1.791 4 4 4 4-1.791 4-4-1.791-4-4-4z" fill="#FFFFFF"/>
+                                <path d="M24 24c0-1.105.895-2 2-2h4c1.105 0 2 .895 2 2v4c0 1.105-.895 2-2 2h-4c-1.105 0-2-.895-2-2v-4z" fill="#424083"/>
+                                <path d="M24 24c0-1.105-.895-2-2-2h-4c-1.105 0-2 .895-2 2v4c0 1.105.895 2 2 2h4c1.105 0 2-.895 2-2v-4z" fill="#424083"/>
+                                <path d="M24 24c1.105 0 2-.895 2-2V8c0-1.105-.895-2-2-2h-4c-1.105 0-2 .895-2 2v14c0 1.105.895 2 2 2h4z" fill="#424083"/>
+                                <path d="M24 24c-1.105 0-2-.895-2-2V8c0-1.105.895-2 2-2h4c1.105 0 2 .895 2 2v14c0 1.105-.895 2-2 2h-4z" fill="#424083"/>
+                                <path d="M24 24c1.105 0 2 .895 2 2v4c0 1.105-.895 2-2 2h-4c-1.105 0-2-.895-2-2v-4z" fill="#FFC600"/>
+                                <path d="M24 24c-1.105 0-2-.895-2-2h-4c-1.105 0-2 .895-2 2v4c0 1.105.895 2 2 2h4c1.105 0 2-.895 2-2v-4z" fill="#FFC600"/>
+                                <path d="M24 24c1.105 0 2 .895 2 2V8c0-1.105-.895-2-2-2h-4c-1.105 0-2 .895-2 2v14c0 1.105.895 2 2 2h4z" fill="#FFC600"/>
+                                <path d="M24 24c-1.105 0-2-.895-2-2V8c0-1.105.895-2 2-2h4c1.105 0 2 .895 2 2v14c0 1.105-.895 2-2 2h-4z" fill="#FFC600"/>
+                                <path d="M24 24c0-1.105.895-2 2-2h4c1.105 0 2 .895 2 2v4c0 1.105-.895 2-2 2h-4c-1.105 0-2-.895-2-2v-4z" fill="#0078D4"/>
+                                <path d="M24 24c-1.105 0-2-.895-2-2h-4c-1.105 0-2 .895-2 2v4c0 1.105.895 2 2 2h4c1.105 0 2-.895 2-2v-4z" fill="#0078D4"/>
+                                <path d="M24 24c1.105 0 2 .895 2 2V8c0-1.105-.895-2-2-2h-4c-1.105 0-2 .895-2 2v14c0 1.105.895 2 2 2h4z" fill="#0078D4"/>
+                                <path d="M24 24c-1.105 0-2-.895-2-2V8c0-1.105.895-2 2-2h4c1.105 0 2 .895 2 2v14c0 1.105-.895 2-2 2h-4z" fill="#0078D4"/>
+                            </svg>
+                        </div>
+                        <h3 class="use-case-title">Infuse data experiences everywhere</h3>
+                        <p class="use-case-description">Bridge the gap between insights and decisions through unmatched interoperability with the apps people use every day.</p>
+                        <a href="#" class="learn-more-link">Learn more</a>
+                    </div>
+                    <div class="use-case-card">
+                        <div class="use-case-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24 4C12.954 4 4 12.954 4 24s8.954 20 20 20 20-8.954 20-20S35.046 4 24 4zm0 36c-8.837 0-16-7.163-16-16s7.163-16 16-16 16 7.163 16 16-7.163 16-16 16z" fill="#B0A4E3"/>
+                                <path d="M24 12c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 20c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z" fill="#624BB8"/>
+                                <path d="M24 16c-4.418 0-8 3.582-8 8s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8zm0 12c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4z" fill="#A4262C"/>
+                                <path d="M24 20c-2.209 0-4 1.791-4 4s1.791 4 4 4 4-1.791 4-4-1.791-4-4-4z" fill="#FFFFFF"/>
+                                <path d="M24 24c0-1.105.895-2 2-2h4c1.105 0 2 .895 2 2v4c0 1.105-.895 2-2 2h-4c-1.105 0-2-.895-2-2v-4z" fill="#424083"/>
+                                <path d="M24 24c0-1.105-.895-2-2-2h-4c-1.105 0-2 .895-2 2v4c0 1.105.895 2 2 2h4c1.105 0 2-.895 2-2v-4z" fill="#424083"/>
+                                <path d="M24 24c1.105 0 2-.895 2-2V8c0-1.105-.895-2-2-2h-4c-1.105 0-2 .895-2 2v14c0 1.105.895 2 2 2h4z" fill="#424083"/>
+                                <path d="M24 24c-1.105 0-2-.895-2-2V8c0-1.105.895-2 2-2h4c1.105 0 2 .895 2 2v14c0 1.105-.895 2-2 2h-4z" fill="#424083"/>
+                                <path d="M24 24c1.105 0 2 .895 2 2v4c0 1.105-.895 2-2 2h-4c-1.105 0-2-.895-2-2v-4z" fill="#FFC600"/>
+                                <path d="M24 24c-1.105 0-2-.895-2-2h-4c-1.105 0-2 .895-2 2v4c0 1.105.895 2 2 2h4c1.105 0 2-.895 2-2v-4z" fill="#FFC600"/>
+                                <path d="M24 24c1.105 0 2 .895 2 2V8c0-1.105-.895-2-2-2h-4c-1.105 0-2 .895-2 2v14c0 1.105.895 2 2 2h4z" fill="#FFC600"/>
+                                <path d="M24 24c-1.105 0-2-.895-2-2V8c0-1.105.895-2 2-2h4c1.105 0 2 .895 2 2v14c0 1.105-.895 2-2 2h-4z" fill="#FFC600"/>
+                                <path d="M24 24c0-1.105.895-2 2-2h4c1.105 0 2 .895 2 2v4c0 1.105-.895 2-2 2h-4c-1.105 0-2-.895-2-2v-4z" fill="#0078D4"/>
+                                <path d="M24 24c-1.105 0-2-.895-2-2h-4c-1.105 0-2 .895-2 2v4c0 1.105.895 2 2 2h4c1.105 0 2-.895 2-2v-4z" fill="#0078D4"/>
+                                <path d="M24 24c1.105 0 2 .895 2 2V8c0-1.105-.895-2-2-2h-4c-1.105 0-2 .895-2 2v14c0 1.105.895 2 2 2h4z" fill="#0078D4"/>
+                                <path d="M24 24c-1.105 0-2-.895-2-2V8c0-1.105.895-2 2-2h4c1.105 0 2 .895 2 2v14c0 1.105-.895 2-2 2h-4z" fill="#0078D4"/>
+                            </svg>
+                        </div>
+                        <h3 class="use-case-title">Empower anyone to work with data</h3>
+                        <p class="use-case-description">Ensure everyone can explore data with an easy-to-use interface, free training resources, and an array of accessibility features.</p>
+                        <a href="#" class="learn-more-link">Learn more</a>
+                    </div>
+                    <div class="use-case-card">
+                        <div class="use-case-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24 4C12.954 4 4 12.954 4 24s8.954 20 20 20 20-8.954 20-20S35.046 4 24 4zm0 36c-8.837 0-16-7.163-16-16s7.163-16 16-16 16 7.163 16 16-7.163 16-16 16z" fill="#B0A4E3"/>
+                                <path d="M24 12c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 20c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z" fill="#624BB8"/>
+                                <path d="M24 16c-4.418 0-8 3.582-8 8s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8zm0 12c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4z" fill="#A4262C"/>
+                                <path d="M24 20c-2.209 0-4 1.791-4 4s1.791 4 4 4 4-1.791 4-4-1.791-4-4-4z" fill="#FFFFFF"/>
+                                <path d="M24 24c0-1.105.895-2 2-2h4c1.105 0 2 .895 2 2v4c0 1.105-.895 2-2 2h-4c-1.105 0-2-.895-2-2v-4z" fill="#424083"/>
+                                <path d="M24 24c0-1.105-.895-2-2-2h-4c-1.105 0-2 .895-2 2v4c0 1.105.895 2 2 2h4c1.105 0 2-.895 2-2v-4z" fill="#424083"/>
+                                <path d="M24 24c1.105 0 2-.895 2-2V8c0-1.105-.895-2-2-2h-4c-1.105 0-2 .895-2 2v14c0 1.105.895 2 2 2h4z" fill="#424083"/>
+                                <path d="M24 24c-1.105 0-2-.895-2-2V8c0-1.105.895-2 2-2h4c1.105 0 2 .895 2 2v14c0 1.105-.895 2-2 2h-4z" fill="#424083"/>
+                                <path d="M24 24c1.105 0 2 .895 2 2v4c0 1.105-.895 2-2 2h-4c-1.105 0-2-.895-2-2v-4z" fill="#FFC600"/>
+                                <path d="M24 24c-1.105 0-2-.895-2-2h-4c-1.105 0-2 .895-2 2v4c0 1.105.895 2 2 2h4c1.105 0 2-.895 2-2v-4z" fill="#FFC600"/>
+                                <path d="M24 24c1.105 0 2 .895 2 2V8c0-1.105-.895-2-2-2h-4c-1.105 0-2 .895-2 2v14c0 1.105.895 2 2 2h4z" fill="#FFC600"/>
+                                <path d="M24 24c-1.105 0-2-.895-2-2V8c0-1.105.895-2 2-2h4c1.105 0 2 .895 2 2v14c0 1.105-.895 2-2 2h-4z" fill="#FFC600"/>
+                                <path d="M24 24c0-1.105.895-2 2-2h4c1.105 0 2 .895 2 2v4c0 1.105-.895 2-2 2h-4c-1.105 0-2-.895-2-2v-4z" fill="#0078D4"/>
+                                <path d="M24 24c-1.105 0-2-.895-2-2h-4c-1.105 0-2 .895-2 2v4c0 1.105.895 2 2 2h4c1.105 0 2-.895 2-2v-4z" fill="#0078D4"/>
+                                <path d="M24 24c1.105 0 2 .895 2 2V8c0-1.105-.895-2-2-2h-4c-1.105 0-2 .895-2 2v14c0 1.105.895 2 2 2h4z" fill="#0078D4"/>
+                                <path d="M24 24c-1.105 0-2-.895-2-2V8c0-1.105.895-2 2-2h4c1.105 0 2 .895 2 2v14c0 1.105-.895 2-2 2h-4z" fill="#0078D4"/>
+                            </svg>
+                        </div>
+                        <h3 class="use-case-title">Get started immediately</h3>
+                        <p class="use-case-description">Start quickly with an easy-to-use report-creation experience, AI-generated reports, and hundreds of report templates.</p>
+                        <a href="#" class="learn-more-link">Learn more</a>
+                    </div>
+                    <div class="use-case-card">
+                        <div class="use-case-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24 4C12.954 4 4 12.954 4 24s8.954 20 20 20 20-8.954 20-20S35.046 4 24 4zm0 36c-8.837 0-16-7.163-16-16s7.163-16 16-16 16 7.163 16 16-7.163 16-16 16z" fill="#B0A4E3"/>
+                                <path d="M24 12c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 20c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z" fill="#624BB8"/>
+                                <path d="M24 16c-4.418 0-8 3.582-8 8s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8zm0 12c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4z" fill="#A4262C"/>
+                                <path d="M24 20c-2.209 0-4 1.791-4 4s1.791 4 4 4 4-1.791 4-4-1.791-4-4-4z" fill="#FFFFFF"/>
+                                <path d="M24 24c0-1.105.895-2 2-2h4c1.105 0 2 .895 2 2v4c0 1.105-.895 2-2 2h-4c-1.105 0-2-.895-2-2v-4z" fill="#424083"/>
+                                <path d="M24 24c0-1.105-.895-2-2-2h-4c-1.105 0-2 .895-2 2v4c0 1.105.895 2 2 2h4c1.105 0 2-.895 2-2v-4z" fill="#424083"/>
+                                <path d="M24 24c1.105 0 2-.895 2-2V8c0-1.105-.895-2-2-2h-4c-1.105 0-2 .895-2 2v14c0 1.105.895 2 2 2h4z" fill="#424083"/>
+                                <path d="M24 24c-1.105 0-2-.895-2-2V8c0-1.105.895-2 2-2h4c1.105 0 2 .895 2 2v14c0 1.105-.895 2-2 2h-4z" fill="#424083"/>
+                                <path d="M24 24c1.105 0 2 .895 2 2v4c0 1.105-.895 2-2 2h-4c-1.105 0-2-.895-2-2v-4z" fill="#FFC600"/>
+                                <path d="M24 24c-1.105 0-2-.895-2-2h-4c-1.105 0-2 .895-2 2v4c0 1.105.895 2 2 2h4c1.105 0 2-.895 2-2v-4z" fill="#FFC600"/>
+                                <path d="M24 24c1.105 0 2 .895 2 2V8c0-1.105-.895-2-2-2h-4c-1.105 0-2 .895-2 2v14c0 1.105.895 2 2 2h4z" fill="#FFC600"/>
+                                <path d="M24 24c-1.105 0-2-.895-2-2V8c0-1.105.895-2 2-2h4c1.105 0 2 .895 2 2v14c0 1.105-.895 2-2 2h-4z" fill="#FFC600"/>
+                                <path d="M24 24c0-1.105.895-2 2-2h4c1.105 0 2 .895 2 2v4c0 1.105-.895 2-2 2h-4c-1.105 0-2-.895-2-2v-4z" fill="#0078D4"/>
+                                <path d="M24 24c-1.105 0-2-.895-2-2h-4c-1.105 0-2 .895-2 2v4c0 1.105.895 2 2 2h4c1.105 0 2-.895 2-2v-4z" fill="#0078D4"/>
+                                <path d="M24 24c1.105 0 2 .895 2 2V8c0-1.105-.895-2-2-2h-4c-1.105 0-2 .895-2 2v14c0 1.105.895 2 2 2h4z" fill="#0078D4"/>
+                                <path d="M24 24c-1.105 0-2-.895-2-2V8c0-1.105.895-2 2-2h4c1.105 0 2 .895 2 2v14c0 1.105-.895 2-2 2h-4z" fill="#0078D4"/>
+                        </svg>
+                        </div>
+                        <h3 class="use-case-title">Embed BI reports for your customers</h3>
+                        <p class="use-case-description">Improve usability and user engagement in your own apps by using Power BI Embedded to embed stunning reports.</p>
+                        <a href="#" class="learn-more-link">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Productivity Section -->
+        <section class="productivity-section scroll-reveal">
+            <div class="container">
+                <h2 class="section-title-medium">Power BI + Microsoft 365: Greater productivity</h2>
+                <p class="section-subtitle-small">Learn how businesses drove productivity by combining Power BI and Microsoft 365 in The Total Economic Impact™ commissioned study conducted by Forrester Consulting.<sup class="superscript">1</sup></p>
+                <div class="productivity-card-grid">
+                    <div class="productivity-card">
+                        <div class="productivity-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24 4C12.954 4 4 12.954 4 24s8.954 20 20 20 20-8.954 20-20S35.046 4 24 4zm0 36c-8.837 0-16-7.163-16-16s7.163-16 16-16 16 7.163 16 16-7.163 16-16 16z" fill="#B0A4E3"/>
+                                <path d="M24 12c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 20c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z" fill="#624BB8"/>
+                                <path d="M24 16c-4.418 0-8 3.582-8 8s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8zm0 12c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4z" fill="#A4262C"/>
+                                <path d="M24 20c-2.209 0-4 1.791-4 4s1.791 4 4 4 4-1.791 4-4-1.791-4-4-4z" fill="#FFFFFF"/>
+                                <path d="M24 24c0-1.105.895-2 2-2h4c1.105 0 2 .895 2 2v4c0 1.105-.895 2-2 2h-4c-1.105 0-2-.895-2-2v-4z" fill="#424083"/>
+                                <path d="M24 24c0-1.105-.895-2-2-2h-4c-1.105 0-2 .895-2 2v4c0 1.105.895 2 2 2h4c1.105 0 2-.895 2-2v-4z" fill="#424083"/>
+                                <path d="M24 24c1.105 0 2-.895 2-2V8c0-1.105-.895-2-2-2h-4c-1.105 0-2 .895-2 2v14c0 1.105.895 2 2 2h4z" fill="#424083"/>
+                                <path d="M24 24c-1.105 0-2-.895-2-2V8c0-1.105.895-2 2-2h4c1.105 0 2 .895 2 2v14c0 1.105-.895 2-2 2h-4z" fill="#424083"/>
+                                <path d="M24 24c1.105 0 2 .895 2 2v4c0 1.105-.895 2-2 2h-4c-1.105 0-2-.895-2-2v-4z" fill="#FFC600"/>
+                                <path d="M24 24c-1.105 0-2-.895-2-2h-4c-1.105 0-2 .895-2 2v4c0 1.105.895 2 2 2h4c1.105 0 2-.895 2-2v-4z" fill="#FFC600"/>
+                                <path d="M24 24c1.105 0 2 .895 2 2V8c0-1.105-.895-2-2-2h-4c-1.105 0-2 .895-2 2v14c0 1.105.895 2 2 2h4z" fill="#FFC600"/>
+                                <path d="M24 24c-1.105 0-2-.895-2-2V8c0-1.105.895-2 2-2h4c1.105 0 2 .895 2 2v14c0 1.105-.895 2-2 2h-4z" fill="#FFC600"/>
+                                <path d="M24 24c0-1.105.895-2 2-2h4c1.105 0 2 .895 2 2v4c0 1.105-.895 2-2 2h-4c-1.105 0-2-.895-2-2v-4z" fill="#0078D4"/>
+                                <path d="M24 24c-1.105 0-2-.895-2-2h-4c-1.105 0-2 .895-2 2v4c0 1.105.895 2 2 2h4c1.105 0 2-.895 2-2v-4z" fill="#0078D4"/>
+                                <path d="M24 24c1.105 0 2 .895 2 2V8c0-1.105-.895-2-2-2h-4c-1.105 0-2 .895-2 2v14c0 1.105.895 2 2 2h4z" fill="#0078D4"/>
+                                <path d="M24 24c-1.105 0-2-.895-2-2V8c0-1.105.895-2 2-2h4c1.105 0 2 .895 2 2v14c0 1.105-.895 2-2 2h-4z" fill="#0078D4"/>
+                            </svg>
+                        </div>
+                        <h3 class="productivity-title">321% return on investment over 3 years</h3>
+                        <a href="#" class="download-link">Download the study</a>
+                    </div>
+                    <div class="productivity-card">
+                        <div class="productivity-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24 4C12.954 4 4 12.954 4 24s8.954 20 20 20 20-8.954 20-20S35.046 4 24 4zm0 36c-8.837 0-16-7.163-16-16s7.163-16 16-16 16 7.163 16 16-7.163 16-16 16z" fill="#B0A4E3"/>
+                                <path d="M24 12c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 20c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z" fill="#624BB8"/>
+                                <path d="M24 16c-4.418 0-8 3.582-8 8s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8zm0 12c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4z" fill="#A4262C"/>
+                                <path d="M24 20c-2.209 0-4 1.791-4 4s1.791 4 4 4 4-1.791 4-4-1.791-4-4-4z" fill="#FFFFFF"/>
+                                <path d="M24 24c0-1.105.895-2 2-2h4c1.105 0 2 .895 2 2v4c0 1.105-.895 2-2 2h-4c-1.105 0-2-.895-2-2v-4z" fill="#424083"/>
+                                <path d="M24 24c0-1.105-.895-2-2-2h-4c-1.105 0-2 .895-2 2v4c0 1.105.895 2 2 2h4c1.105 0 2-.895 2-2v-4z" fill="#424083"/>
+                                <path d="M24 24c1.105 0 2-.895 2-2V8c0-1.105-.895-2-2-2h-4c-1.105 0-2 .895-2 2v14c0 1.105.895 2 2 2h4z" fill="#424083"/>
+                                <path d="M24 24c-1.105 0-2-.895-2-2V8c0-1.105.895-2 2-2h4c1.105 0 2 .895 2 2v14c0 1.105-.895 2-2 2h-4z" fill="#424083"/>
+                                <path d="M24 24c1.105 0 2 .895 2 2v4c0 1.105-.895 2-2 2h-4c-1.105 0-2-.895-2-2v-4z" fill="#FFC600"/>
+                                <path d="M24 24c-1.105 0-2-.895-2-2h-4c-1.105 0-2 .895-2 2v4c0 1.105.895 2 2 2h4c1.105 0 2-.895 2-2v-4z" fill="#FFC600"/>
+                                <path d="M24 24c1.105 0 2 .895 2 2V8c0-1.105-.895-2-2-2h-4c-1.105 0-2 .895-2 2v14c0 1.105.895 2 2 2h4z" fill="#FFC600"/>
+                                <path d="M24 24c-1.105 0-2-.895-2-2V8c0-1.105.895-2 2-2h4c1.105 0 2 .895 2 2v14c0 1.105-.895 2-2 2h-4z" fill="#FFC600"/>
+                                <path d="M24 24c0-1.105.895-2 2-2h4c1.105 0 2 .895 2 2v4c0 1.105-.895 2-2 2h-4c-1.105 0-2-.895-2-2v-4z" fill="#0078D4"/>
+                                <path d="M24 24c-1.105 0-2-.895-2-2h-4c-1.105 0-2 .895-2 2v4c0 1.105.895 2 2 2h4c1.105 0 2-.895 2-2v-4z" fill="#0078D4"/>
+                                <path d="M24 24c1.105 0 2 .895 2 2V8c0-1.105-.895-2-2-2h-4c-1.105 0-2 .895-2 2v14c0 1.105.895 2 2 2h4z" fill="#0078D4"/>
+                                <path d="M24 24c-1.105 0-2-.895-2-2V8c0-1.105.895-2 2-2h4c1.105 0 2 .895 2 2v14c0 1.105-.895 2-2 2h-4z" fill="#0078D4"/>
+                            </svg>
+                        </div>
+                        <h3 class="productivity-title">&lt;6 months to payback</h3>
+                        <a href="#" class="download-link">Download the study</a>
+                    </div>
+                    <div class="productivity-card">
+                        <div class="productivity-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24 4C12.954 4 4 12.954 4 24s8.954 20 20 20 20-8.954 20-20S35.046 4 24 4zm0 36c-8.837 0-16-7.163-16-16s7.163-16 16-16 16 7.163 16 16-7.163 16-16 16z" fill="#B0A4E3"/>
+                                <path d="M24 12c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 20c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z" fill="#624BB8"/>
+                                <path d="M24 16c-4.418 0-8 3.582-8 8s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8zm0 12c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4z" fill="#A4262C"/>
+                                <path d="M24 20c-2.209 0-4 1.791-4 4s1.791 4 4 4 4-1.791 4-4-1.791-4-4-4z" fill="#FFFFFF"/>
+                                <path d="M24 24c0-1.105.895-2 2-2h4c1.105 0 2 .895 2 2v4c0 1.105-.895 2-2 2h-4c-1.105 0-2-.895-2-2v-4z" fill="#424083"/>
+                                <path d="M24 24c0-1.105-.895-2-2-2h-4c-1.105 0-2 .895-2 2v4c0 1.105.895 2 2 2h4c1.105 0 2-.895 2-2v-4z" fill="#424083"/>
+                                <path d="M24 24c1.105 0 2-.895 2-2V8c0-1.105-.895-2-2-2h-4c-1.105 0-2 .895-2 2v14c0 1.105.895 2 2 2h4z" fill="#424083"/>
+                                <path d="M24 24c-1.105 0-2-.895-2-2V8c0-1.105.895-2 2-2h4c1.105 0 2 .895 2 2v14c0 1.105-.895 2-2 2h-4z" fill="#424083"/>
+                                <path d="M24 24c1.105 0 2 .895 2 2v4c0 1.105-.895 2-2 2h-4c-1.105 0-2-.895-2-2v-4z" fill="#FFC600"/>
+                                <path d="M24 24c-1.105 0-2-.895-2-2h-4c-1.105 0-2 .895-2 2v4c0 1.105.895 2 2 2h4c1.105 0 2-.895 2-2v-4z" fill="#FFC600"/>
+                                <path d="M24 24c1.105 0 2 .895 2 2V8c0-1.105-.895-2-2-2h-4c-1.105 0-2 .895-2 2v14c0 1.105.895 2 2 2h4z" fill="#FFC600"/>
+                                <path d="M24 24c-1.105 0-2-.895-2-2V8c0-1.105.895-2 2-2h4c1.105 0 2 .895 2 2v14c0 1.105-.895 2-2 2h-4z" fill="#FFC600"/>
+                                <path d="M24 24c0-1.105.895-2 2-2h4c1.105 0 2 .895 2 2v4c0 1.105-.895 2-2 2h-4c-1.105 0-2-.895-2-2v-4z" fill="#0078D4"/>
+                                <path d="M24 24c-1.105 0-2-.895-2-2h-4c-1.105 0-2 .895-2 2v4c0 1.105.895 2 2 2h4c1.105 0 2-.895 2-2v-4z" fill="#0078D4"/>
+                                <path d="M24 24c1.105 0 2 .895 2 2V8c0-1.105-.895-2-2-2h-4c-1.105 0-2 .895-2 2v14c0 1.105.895 2 2 2h4z" fill="#0078D4"/>
+                                <path d="M24 24c-1.105 0-2-.895-2-2V8c0-1.105.895-2 2-2h4c1.105 0 2 .895 2 2v14c0 1.105-.895 2-2 2h-4z" fill="#0078D4"/>
+                            </svg>
+                        </div>
+                        <h3 class="productivity-title">$38.48M total benefit over 3 years</h3>
+                        <a href="#" class="download-link">Download the study</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research and News Section -->
+        <section id="research-news" class="research-news-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">RESEARCH AND NEWS</span>
+                    <h2 class="section-title">Independent research and news</h2>
+                </div>
+                <div class="research-logos">
+                    <img src="images/logo.png" alt="Gartner Logo" class="research-logo">
+                    <img src="images/logo1.png" alt="Forrester Logo" class="research-logo">
+                    <img src="images/logo2.png" alt="Power BI Logo" class="research-logo">
+                </div>
+                <p class="report-info">
+                    Microsoft was positioned highest for Ability to Execute and furthest for Completeness of Vision in the June 2024 Gartner® Magic Quadrant™ for Analytics and Business Intelligence Platforms.<sup class="superscript">2</sup>
+                </p>
+                <a href="#" class="btn btn-outline">Read the report</a>
+            </div>
+        </section>
+
+        <!-- Plans Section -->
+        <section id="plans" class="plans-section scroll-reveal">
+            <div class="container">
+                <span class="section-label">PRICING</span>
+                <h2 class="section-title">Plans to suit every need</h2>
+                <a href="#pricing" class="btn btn-primary pricing-details-btn">See pricing details</a>
+                <div class="plans-card-grid">
+                    <div class="plan-card">
+                        <h3 class="plan-title">Free account</h3>
+                        <p class="plan-description">Create rich, interactive reports with visual analytics at your fingertips for free.</p>
+                        <div class="plan-price">Free</div>
+                        <a href="#" class="btn btn-link plan-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.5 7L14.5 12L9.5 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Start free
+                        </a>
+                    </div>
+                    <div class="plan-card">
+                        <h3 class="plan-title">Power BI Pro</h3>
+                        <p class="plan-description">Access Power BI reports shared with you and publish your own for an even bigger impact.</p>
+                        <div class="plan-price">$14.00</div>
+                        <p class="price-details">user/month, paid yearly</p>
+                        <a href="#" class="btn btn-link plan-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.5 7L14.5 12L9.5 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Buy now
+                        </a>
+                    </div>
+                    <div class="plan-card">
+                        <h3 class="plan-title">Power BI Premium Per User</h3>
+                        <p class="plan-description">License specific users with enterprise-scale features.</p>
+                        <div class="plan-price">$24.00</div>
+                        <p class="price-details">user/month, paid yearly</p>
+                        <a href="#" class="btn btn-link plan-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.5 7L14.5 12L9.5 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Buy now
+                        </a>
+                    </div>
+                    <div class="plan-card">
+                        <h3 class="plan-title">Power BI in Microsoft Fabric</h3>
+                        <p class="plan-description">Share reports with users who don't have paid licenses and get access to Microsoft Fabric workloads using a single capacity.</p>
+                        <div class="plan-price">Variable</div>
+                        <a href="#" class="btn btn-link plan-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.5 7L14.5 12L9.5 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                            See pricing
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Powerful Alone, Better Together Section -->
+    <section class="interoperability-section" id="interoperability-section">
+        <span class="section-label">INTEROPERABILITY</span>
+        <h2 class="section-title">Powerful alone, better together</h2>
+        <div class="interop-cards-grid">
+            <div class="interop-card">
+                <img src="images/card.png" alt="Microsoft Power Platform" class="interop-card-image">
+                <div class="interop-card-content">
+                    <span class="interop-category">Microsoft Power Platform</span>
+                    <h3 class="interop-title">Turn ideas into impactful solutions</h3>
+                    <p class="interop-description">Embed insights from Power BI across your Power Platform products to build low-code, data-driven solutions that help everyone get more done.</p>
+                    <a href="#" class="btn btn-link interop-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.5 7L14.5 12L9.5 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Learn more
+                    </a>
+                </div>
+            </div>
+            <div class="interop-card">
+                <img src="images/1.jpeg" alt="Microsoft Azure" class="interop-card-image">
+                <div class="interop-card-content">
+                    <span class="interop-category">Microsoft Azure</span>
+                    <h3 class="interop-title">Connect Power BI across your data estate</h3>
+                    <p class="interop-description">Add Power BI reports to Azure apps, analyze petabytes of Azure data in Power BI, and infuse your reports with advanced AI capabilities and insights.</p>
+                    <a href="#" class="btn btn-link interop-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.5 7L14.5 12L9.5 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Learn more
+                    </a>
+                </div>
+            </div>
+            <div class="interop-card">
+                <img src="images/2.jpeg" alt="Microsoft 365" class="interop-card-image">
+                <div class="interop-card-content">
+                    <span class="interop-category">Microsoft 365</span>
+                    <h3 class="interop-title">Get deeper insights in Microsoft 365 apps</h3>
+                    <p class="interop-description">Empower business users to explore and share data in the Microsoft apps they use every day—Teams, Excel, PowerPoint, Outlook, and SharePoint.</p>
+                    <a href="#" class="btn btn-link interop-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.5 7L14.5 12L9.5 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Learn more
+                    </a>
+                </div>
+            </div>
+            <div class="interop-card">
+                <img src="images/5.jpeg" alt="Microsoft Purview" class="interop-card-image">
+                <div class="interop-card-content">
+                    <span class="interop-category">Microsoft Purview</span>
+                    <h3 class="interop-title">Manage, govern, and secure your data</h3>
+                    <p class="interop-description">Get easy data discovery, data cataloging, and sensitivity labeling in a unified view using Power BI and Microsoft Purview.</p>
+                    <a href="#" class="btn btn-link interop-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.5 7L14.5 12L9.5 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Learn more
+                    </a>
+                </div>
+            </div>
+            <div class="interop-card">
+                <img src="images/4.jpeg" alt="Dynamics 365" class="interop-card-image">
+                <div class="interop-card-content">
+                    <span class="interop-category">Dynamics 365</span>
+                    <h3 class="interop-title">Turn data into impact in business apps</h3>
+                    <p class="interop-description">Connect your Dynamics 365 data to Power BI and embed AI-driven reports in your business applications so users can take informed actions quickly.</p>
+                    <a href="#" class="btn btn-link interop-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.5 7L14.5 12L9.5 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Learn more
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-controls">
+            <button class="carousel-button carousel-prev"></button>
+            <button class="carousel-button carousel-next"></button>
+        </div>
+    </section>
+    <section class="data-security-section" id="data-security-section">
+    <p class="section-label">SECURITY</p>
+    <h1>Gain visibility into your data estate</h1>
+    <p class="subtext">
+      Get peace of mind with built-in security features and seamless
+      interoperation with leading security and governance solutions.
+    </p>
+    <button class="learn-more-btn">Learn more</button>
+  </section>
+
+    <!-- FAQ Section -->
+    <section id="faq-section" class="faq-section">
+      <div class="faq-container">
+        <h2 class="faq-title">Frequently asked questions</h2>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-toggle" aria-expanded="false">+</button>
+            <div class="faq-question">What is Power BI?</div>
+            <div class="faq-answer">Power BI is a unified, scalable platform for self-service and enterprise business intelligence (BI). Connect to and visualize any data, and seamlessly infuse the visuals into the apps you use every day.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-toggle" aria-expanded="false">+</button>
+            <div class="faq-question">How should I choose a Power BI license for my organization?</div>
+            <div class="faq-answer">Power BI licenses aren't exclusive—there are several ways to mix and match plans and licenses. For example, you could purchase Premium (P-SKU) or Microsoft Fabric (F-SKU) capacity to host the most popular reports, and then buy Power BI Pro licenses (or get them through Microsoft 365 E5) for your users who need to create and publish reports. Contact sales to learn more.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-toggle" aria-expanded="false">+</button>
+            <div class="faq-question">What is Power BI Embedded?</div>
+            <div class="faq-answer">Microsoft Power BI Embedded is a pay-as-you-go Azure platform as a service (PaaS) offering. It allows app developers to embed fully interactive reports into their apps without having to build their own data visuals and controls.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-toggle" aria-expanded="false">+</button>
+            <div class="faq-question">What is Microsoft Fabric?</div>
+            <div class="faq-answer">Microsoft Fabric is an end-to-end analytics solution with full-service capabilities including data movement, data lakes, data engineering, data integration, data science, real-time analytics, data monitoring, and business intelligence—all backed by a shared platform providing robust data security, governance, and compliance.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-toggle" aria-expanded="false">+</button>
+            <div class="faq-question">How does Power BI fit into Microsoft Fabric?</div>
+            <div class="faq-answer">Power BI provides the industry-leading BI in Microsoft Fabric that enables you to gain insights from data. Power BI Premium per capacity customers and some others can access Fabric workloads directly through the Microsoft Fabric trial experience. And with its unified capacity model, a single pool of capacity can be used again and again across your Microsoft Fabric workload.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-toggle" aria-expanded="false">+</button>
+            <div class="faq-question">Can I access Microsoft Fabric if I'm a Power BI Pro customer?</div>
+            <div class="faq-answer">Power BI Pro customers can access Fabric workloads only through the Microsoft Fabric trial experience.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-toggle" aria-expanded="false">+</button>
+            <div class="faq-question">What features are available in the new F SKUs versus the previous P SKUs?</div>
+            <div class="faq-answer">Feature availability depends on both SKU and capacity size. See the feature lists for specific details.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+        <!-- Take the Next Step Section -->
+        <section class="next-step-section">
+            <h2 class="next-step-title">Take the next step</h2>
+            <div class="next-step-cards">
+              <div class="next-step-card" data-animate="fade-in" style="--delay:0ms">
+                <div class="next-step-icon" style="background:#eaf3ff"><svg width="32" height="32" fill="none"><rect width="32" height="32" rx="8" fill="#eaf3ff"/><rect x="8" y="14" width="16" height="4" rx="2" fill="#0078d4"/><rect x="8" y="20" width="16" height="4" rx="2" fill="#0078d4"/><rect x="8" y="8" width="16" height="4" rx="2" fill="#0078d4"/></svg></div>
+                <div class="next-step-content">
+                  <div class="next-step-card-title">Start using Power BI for free</div>
+                  <div class="next-step-card-desc">Find insights within your data and share rich analytics reports by trying Power BI free in Microsoft Fabric.</div>
+                  <a href="#" class="next-step-btn">Try it for free</a>
+                </div>
+              </div>
+              <div class="next-step-card" data-animate="fade-in" style="--delay:120ms">
+                <div class="next-step-icon" style="background:#eaf3ff"><svg width="32" height="32" fill="none"><rect width="32" height="32" rx="8" fill="#eaf3ff"/><rect x="10" y="10" width="12" height="12" rx="3" fill="#0078d4"/><rect x="14" y="14" width="4" height="4" rx="2" fill="#fff"/></svg></div>
+                <div class="next-step-content">
+                  <div class="next-step-card-title">Contact Sales</div>
+                  <div class="next-step-card-desc">Connect with a sales specialist via chat or by calling (800) 642 7676. Available M-F 6 AM to 3 PM PT.</div>
+                  <a href="#" class="next-step-btn">Chat now</a>
+                </div>
+              </div>
+              <div class="next-step-card" data-animate="fade-in" style="--delay:240ms">
+                <div class="next-step-icon" style="background:#eaf3ff"><svg width="32" height="32" fill="none"><rect width="32" height="32" rx="8" fill="#eaf3ff"/><circle cx="16" cy="16" r="7" fill="#0078d4"/><rect x="14" y="13" width="4" height="6" rx="2" fill="#fff"/></svg></div>
+                <div class="next-step-content">
+                  <div class="next-step-card-title">Request we contact you</div>
+                  <div class="next-step-card-desc">Submit a request for a Microsoft specialist or partner to contact you within two business days.</div>
+                  <a href="#" class="next-step-btn">Send a request</a>
+                </div>
+              </div>
+            </div>
+          </section>
+      
+
+    <!-- Legal/Disclaimer Section -->
+    <section class="legal-section">
+      <div class="legal-container">
+        <hr class="legal-divider" />
+        <div class="legal-text">
+          <p><a href="#ref1" id="ref1">[1]</a><br>
+          Results are for a composite organization based on interviewed customers. The Total Economic Impact™ of Microsoft PowerBI Pro in Microsoft 365 E5, a commissioned study conducted by Forrester Consulting on behalf of Microsoft, July 2023. As of October 2023, some Microsoft 365 and Office 365 suites no longer include Microsoft Teams. Subscribers to those plans must purchase a Teams license separately.</p>
+          <p><a href="#ref2" id="ref2">[2]</a><br>
+          Gartner, Magic Quadrant for Analytics and Business Intelligence Platforms, Kurt Schlegel, Anirudh Ganeshan, David Pidsley, Julian Sun, Georgia O'Callaghan, Christopher Long, Kevin Quinn, Fay Fei, Edgar Macari, Jamie O'Brien, June 20, 2024.<br>
+          Gartner is a registered trademark and service mark and Magic Quadrant is a registered trademark of Gartner, Inc. and/or its affiliates in the U.S. and internationally and are used herein with permission. All rights reserved.<br>
+          Gartner does not endorse any vendor, product or service depicted in its research publications and does not advise technology users to select only those vendors with the highest ratings or other designation. Gartner research publications consist of the opinions of Gartner's research organization and should not be construed as statements of fact. Gartner disclaims all warranties, expressed or implied, with respect to this research, including any warranties of merchantability or fitness for a particular purpose.</p>
+          <p><a href="#ref3" id="ref3">[3]</a><br>
+          The Total Economic Impact™ Of Microsoft Fabric, A Forrester Consulting Total Economic Impact™ study commissioned by Microsoft, May 2024. Results are for a composite organization based on interviewed customers.</p>
+        </div>
+      </div>
+    </section>
+    <!-- Replica Legal and Social Section (as in image) -->
+    <section class="legal-section">
+      <div class="legal-container">
+        <hr class="legal-divider" />
+        <div class="legal-text">
+          <p><a href="#ref1" id="ref1">[1]</a><br>
+          Results are for a composite organization based on interviewed customers. The Total Economic Impact™ of Microsoft PowerBI Pro in Microsoft 365 E5, a commissioned study conducted by Forrester Consulting on behalf of Microsoft, July 2023. As of October 2023, some Microsoft 365 and Office 365 suites no longer include Microsoft Teams. Subscribers to those plans must purchase a Teams license separately.</p>
+          <p><a href="#ref2" id="ref2">[2]</a><br>
+          Gartner, Magic Quadrant for Analytics and Business Intelligence Platforms, Kurt Schlegel, Anirudh Ganeshan, David Pidsley, Julian Sun, Georgia O'Callaghan, Christopher Long, Kevin Quinn, Fay Fei, Edgar Macari, Jamie O'Brien, June 20, 2024.<br>
+          Gartner is a registered trademark and service mark and Magic Quadrant is a registered trademark of Gartner, Inc. and/or its affiliates in the U.S. and internationally and are used herein with permission. All rights reserved.<br>
+          Gartner does not endorse any vendor, product or service depicted in its research publications and does not advise technology users to select only those vendors with the highest ratings or other designation. Gartner research publications consist of the opinions of Gartner's research organization and should not be construed as statements of fact. Gartner disclaims all warranties, expressed or implied, with respect to this research, including any warranties of merchantability or fitness for a particular purpose.</p>
+          <p><a href="#ref3" id="ref3">[3]</a><br>
+          The Total Economic Impact™ Of Microsoft Fabric, A Forrester Consulting Total Economic Impact™ study commissioned by Microsoft, May 2024. Results are for a composite organization based on interviewed customers.</p>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-social-bar">
+        <span>Follow Power BI</span>
+        <div class="footer-social">
+          <a href="#" class="social-link" aria-label="X"><svg width="24" height="24" fill="currentColor"><path d="M17.53 3.47a9 9 0 1 0 0 17.06 9 9 0 0 0 0-17.06zm2.12 12.12l-1.41 1.41-3.18-3.18-3.18 3.18-1.41-1.41 3.18-3.18-3.18-3.18 1.41-1.41 3.18 3.18 3.18-3.18 1.41 1.41-3.18 3.18 3.18 3.18z"/></svg></a>
+          <a href="#" class="social-link" aria-label="Facebook"><svg width="24" height="24" fill="currentColor"><path d="M22.675 0h-21.35C.595 0 0 .592 0 1.326v21.348C0 23.408.595 24 1.326 24h11.495v-9.294H9.691v-3.622h3.13V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.918.001c-1.504 0-1.797.715-1.797 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.406 24 24 23.408 24 22.674V1.326C24 .592 23.406 0 22.675 0"/></svg></a>
+          <a href="#" class="social-link" aria-label="YouTube"><svg width="24" height="24" fill="currentColor"><path d="M23.498 6.186a2.994 2.994 0 0 0-2.107-2.12C19.19 3.5 12 3.5 12 3.5s-7.19 0-9.391.566A2.994 2.994 0 0 0 .502 6.186C0 8.39 0 12 0 12s0 3.61.502 5.814a2.994 2.994 0 0 0 2.107 2.12C4.81 20.5 12 20.5 12 20.5s7.19 0 9.391-.566a2.994 2.994 0 0 0 2.107-2.12C24 15.61 24 12 24 12s0-3.61-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-grid">
+        <div class="footer-column">
+          <h4>What's new</h4>
+          <ul>
+            <li><a href="#">Surface Pro</a></li>
+            <li><a href="#">Surface Laptop</a></li>
+            <li><a href="#">Surface Laptop Studio 2</a></li>
+            <li><a href="#">Microsoft Copilot</a></li>
+            <li><a href="#">AI in Windows</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Microsoft Store</h4>
+          <ul>
+            <li><a href="#">Account profile</a></li>
+            <li><a href="#">Download Center</a></li>
+            <li><a href="#">Microsoft Store support</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Order tracking</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Education</h4>
+          <ul>
+            <li><a href="#">Microsoft in education</a></li>
+            <li><a href="#">Devices for education</a></li>
+            <li><a href="#">Microsoft Teams for Education</a></li>
+            <li><a href="#">Microsoft 365 Education</a></li>
+            <li><a href="#">AI for education</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Business</h4>
+          <ul>
+            <li><a href="#">Microsoft Cloud</a></li>
+            <li><a href="#">Microsoft Security</a></li>
+            <li><a href="#">Dynamics 365</a></li>
+            <li><a href="#">Microsoft 365</a></li>
+            <li><a href="#">Microsoft Power Platform</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Developer & IT</h4>
+          <ul>
+            <li><a href="#">Azure</a></li>
+            <li><a href="#">Microsoft Developer</a></li>
+            <li><a href="#">Microsoft Learn</a></li>
+            <li><a href="#">Microsoft Tech Community</a></li>
+            <li><a href="#">Azure Marketplace</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">About Microsoft</a></li>
+            <li><a href="#">Company news</a></li>
+            <li><a href="#">Privacy at Microsoft</a></li>
+            <li><a href="#">Investors</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-bottom-left">
+          <span>English (United States)</span>
+          <a href="#">Your Privacy Choices</a>
+          <a href="#">Consumer Health Privacy</a>
+        </div>
+        <div class="footer-legal">
+          <a href="#">Sitemap</a>
+          <a href="#">Contact Microsoft</a>
+          <a href="#">Privacy</a>
+          <a href="#">Terms of use</a>
+          <a href="#">Trademarks</a>
+          <a href="#">Safety & eco</a>
+          <a href="#">Recycling</a>
+          <a href="#">About our ads</a>
+          <span>© Microsoft 2025</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Voice Control Interface -->
+    <div class="voice-control-container">
+        <button id="voice-control-button" class="voice-control-button" title="Voice Control">
+            <i class="fas fa-microphone"></i>
+        </button>
+        <div id="voice-control-status" class="voice-status">Click to speak</div>
+    </div>
+
+    <!-- Font Awesome for Icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js" crossorigin="anonymous"></script>
+
+    <!-- AI Chatbot Widget -->
+    <div id="ai-chatbot-widget">
+      <div id="ai-chatbot-button">
+        <span class="ai-chatbot-icon">💬</span>
+        <span class="ai-chatbot-label">AI-powered assistant</span>
+        <span class="ai-chatbot-plus">+</span>
+      </div>
+      <div id="ai-chatbot-panel">
+        <div class="ai-chatbot-header">
+          <span class="ai-chatbot-title">AI-powered assistant</span>
+          <button id="ai-chatbot-close">&times;</button>
+        </div>
+        <div class="ai-chatbot-body" id="ai-chatbot-body">
+          <div class="ai-chatbot-message ai-chatbot-message-bot">
+            Hi. I'm an AI-powered assistant, here to help you find information about Microsoft products and services.<br>
+            <a href="#">Chat with sales</a> | <a href="#">Contact us</a>
+          </div>
+        </div>
+        <form id="ai-chatbot-form">
+          <input type="text" id="ai-chatbot-input" placeholder="Ask a work question or make a request..." autocomplete="off" />
+          <button type="button" id="ai-chatbot-mic" title="Speak"><i class="fas fa-microphone"></i></button>
+          <button type="submit">&#9658;</button>
+        </form>
+      </div>
+    </div>
+
+</body>
+</html>
+

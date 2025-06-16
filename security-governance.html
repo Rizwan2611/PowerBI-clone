@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security & Governance - Power BI</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/voice-control.css">
+    <link rel="stylesheet" href="css/content-pages.css">
+</head>
+<body>
+    <div id="navbar-container"></div>
+
+    <main class="container" style="padding-top: 100px;">
+        <a href="index.html" class="back-arrow-link">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Back to Home
+        </a>
+        <h1>Security & Governance in Power BI</h1>
+        <p>Ensure your data is secure and compliant with Power BI's robust security and governance features.</p>
+        
+        <section class="main-content-section security-feature-section">
+            <h2>Key Security Features</h2>
+            <ul>
+                <li>**Row-Level Security (RLS):** Control access to rows in a database table based on user characteristics.</li>
+                <li>**Data Encryption:** Protect your data at rest and in transit.</li>
+                <li>**Azure Active Directory Integration:** Seamlessly manage user authentication and authorization.</li>
+                <li>**Compliance Certifications:** Adhere to industry-specific and regulatory compliance standards.</li>
+            </ul>
+        </section>
+
+        <section class="main-content-section governance-feature-section">
+            <h2>Governance Capabilities</h2>
+            <ul>
+                <li>**Admin Portal:** Centralized management for Power BI deployments.</li>
+                <li>**Audit Logging:** Track user activities for compliance and monitoring.</li>
+                <li>**Data Loss Prevention (DLP):** Prevent sensitive information from being shared inappropriately.</li>
+                <li>**Information Protection:** Classify and label sensitive data.</li>
+            </ul>
+        </section>
+
+        <section class="main-content-section learn-more-security">
+            <h2>Learn More</h2>
+            <p>Discover how Power BI helps you maintain data security and governance policies.</p>
+            <button class="btn btn-primary">View Security Documentation</button>
+        </section>
+    </main>
+
+    <div id="voice-control-container" class="voice-control-container">
+        <button id="voice-control-button" class="voice-control-button">
+            <i class="fas fa-microphone"></i>
+        </button>
+        <div id="voice-control-status" class="voice-status">Click to speak</div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js" crossorigin="anonymous"></script>
+    <script src="js/components.js"></script>
+    <script src="js/voice-control.js"></script>
+</body>
+</html> 

@@ -1,0 +1,220 @@
+/* Styles for Product Overview Section on Homepage */
+
+.product-overview {
+    padding: 80px 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.product-overview .section-header {
+    margin-bottom: 50px;
+}
+
+.product-overview .section-label {
+    font-size: 12px;
+    color: #605e5c;
+    margin-bottom: 10px;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.product-overview .section-title {
+    font-size: 40px;
+    font-weight: 700;
+    color: #323130;
+    line-height: 1.2;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.product-capabilities-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.capabilities-tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 60px;
+}
+
+.capabilities-tabs .capability-tab {
+    background-color: #e6e6e6;
+    color: #323130;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.capabilities-tabs .capability-tab:hover {
+    background-color: #d1d1d1;
+}
+
+.capabilities-tabs .capability-tab.active {
+    background-color: #0078d4;
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 120, 212, 0.2);
+}
+
+.capabilities-content {
+    display: flex;
+    gap: 40px;
+    text-align: left;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.insights-container {
+    flex: 1;
+    min-width: 400px;
+    border-left: 4px solid #e6e6e6;
+    padding-left: 20px;
+}
+
+.insight-item {
+    margin-bottom: 25px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-left-color 0.3s ease;
+}
+
+.insight-item:hover {
+    background-color: #f3f2f1;
+}
+
+.insight-item.expanded {
+    border-left-color: #a4262c; /* Red line as per image */
+}
+
+.insight-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #323130;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.insight-title .toggle-icon {
+    font-size: 18px;
+    font-weight: bold;
+    color: #0078d4;
+    transition: transform 0.3s ease;
+}
+
+.insight-item.expanded .toggle-icon {
+    transform: rotate(180deg);
+}
+
+.insight-description {
+    font-size: 15px;
+    color: #605e5c;
+    line-height: 1.6;
+    margin-top: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.insight-item.expanded .insight-description {
+    max-height: 200px; /* Adjust based on content height */
+}
+
+.insight-description .read-more {
+    color: #0078d4;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 15px;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.insight-description .read-more:hover {
+    color: #005a9e;
+    text-decoration: underline;
+}
+
+.dashboard-image-container {
+    flex: 2;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    margin-left: 40px;
+    background-color: #fff;
+    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashboard-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
+    object-fit: contain;
+}
+
+.dashboard-image-container.slide-out {
+    opacity: 0;
+    transform: translateX(20px);
+}
+
+.dashboard-image-container.slide-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .capabilities-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .insights-container,
+    .dashboard-image-container {
+        width: 100%;
+        min-width: unset;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-overview {
+        padding: 60px 15px;
+    }
+
+    .product-overview .section-title {
+        font-size: 32px;
+    }
+
+    .capabilities-tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .capabilities-tabs .capability-tab {
+        width: 90%;
+    }
+
+    .insights-container {
+        padding-left: 10px;
+        border-left-width: 2px;
+    }
+} 

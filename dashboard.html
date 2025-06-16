@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Power BI</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/voice-control.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="js/navbar.js"></script>
+</head>
+<body class="dashboard-body">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            new Navbar();
+        });
+    </script>
+    <!-- Dashboard Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-left">
+                <a href="#" class="navbar-brand">
+                    <img src="images/Microsoft_logo.svg.png" alt="Microsoft Logo" class="microsoft-logo">
+                    Microsoft
+                </a>
+                <span class="divider">|</span>
+                <div class="product-stack">
+                    <a href="#" class="product-link">Power Platform</a>
+                    <a href="#" class="product-link">Power BI</a>
+                </div>
+            </div>
+            <div class="nav-center">
+                <ul class="nav-links">
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">About Power Platform <span class="dropdown-icon"></span></a>
+                        <div class="dropdown-menu">
+                            <a href="get-started.html" class="dropdown-item">Get Started</a>
+                            <a href="guided-tours.html" class="dropdown-item">Guided Tours</a>
+                            <a href="ai.html" class="dropdown-item">Artificial Intelligence (AI)</a>
+                            <a href="security-governance.html" class="dropdown-item">Security & Governance</a>
+                            <a href="dataverse.html" class="dropdown-item">Dataverse</a>
+                            <a href="connectors.html" class="dropdown-item">Connectors</a>
+                            <a href="templates.html" class="dropdown-item">Templates</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">Solutions <span class="dropdown-icon"></span></a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Business solutions</a>
+                            <a href="#" class="dropdown-item">Industry solutions</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">Products <span class="dropdown-icon"></span></a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Power BI</a>
+                            <a href="#" class="dropdown-item">Power Apps</a>
+                            <a href="#" class="dropdown-item">Power Automate</a>
+                            <a href="#" class="dropdown-item">Power Virtual Agents</a>
+                            <a href="#" class="dropdown-item">Power Pages</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Partners</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">Resources <span class="dropdown-icon"></span></a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Documentation</a>
+                            <a href="#" class="dropdown-item">Support</a>
+                            <a href="#" class="dropdown-item">Community</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <button class="btn btn-outline">Buy now</button>
+                <button class="btn btn-dark">Start free</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Dashboard Sidebar -->
+    <aside class="dashboard-sidebar">
+        <div class="sidebar-section">
+            <h3>Workspaces</h3>
+            <ul class="workspace-list">
+                <li class="workspace-item active">
+                    <span class="workspace-icon">📊</span>
+                    <span>My workspace</span>
+                </li>
+                <li class="workspace-item">
+                    <span class="workspace-icon">👥</span>
+                    <span>Sales Team</span>
+                </li>
+                <li class="workspace-item">
+                    <span class="workspace-icon">📈</span>
+                    <span>Marketing</span>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="sidebar-section">
+            <h3>Recent</h3>
+            <ul class="recent-list">
+                <li class="recent-item">
+                    <span class="item-icon">📊</span>
+                    <span>Sales Dashboard</span>
+                </li>
+                <li class="recent-item">
+                    <span class="item-icon">📈</span>
+                    <span>Revenue Report</span>
+                </li>
+                <li class="recent-item">
+                    <span class="item-icon">👥</span>
+                    <span>Customer Analytics</span>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="sidebar-section">
+            <h3>Favorites</h3>
+            <ul class="favorites-list">
+                <li class="favorite-item">
+                    <span class="item-icon">⭐</span>
+                    <span>Q4 Performance</span>
+                </li>
+                <li class="favorite-item">
+                    <span class="item-icon">⭐</span>
+                    <span>Team Metrics</span>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <!-- Main Dashboard Content -->
+    <main class="dashboard-main">
+        <a href="index.html" class="back-arrow-link">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Back to Home
+        </a>
+        <!-- Dashboard Controls -->
+        <div class="dashboard-controls">
+            <div class="controls-left">
+                <h1 class="dashboard-title">Sales Performance Dashboard</h1>
+                <div class="dashboard-meta">
+                    <span>Last updated: 2 minutes ago</span>
+                    <span>•</span>
+                    <span>Auto-refresh: On</span>
+                </div>
+            </div>
+            
+            <div class="controls-right">
+                <div class="filter-controls">
+                    <select id="dateFilter" class="filter-select">
+                        <option value="7">Last 7 days</option>
+                        <option value="30" selected>Last 30 days</option>
+                        <option value="90">Last 90 days</option>
+                        <option value="365">Last year</option>
+                    </select>
+                    
+                    <select id="regionFilter" class="filter-select">
+                        <option value="all">All Regions</option>
+                        <option value="north">North</option>
+                        <option value="south">South</option>
+                        <option value="east">East</option>
+                        <option value="west">West</option>
+                    </select>
+                </div>
+                
+                <button class="btn btn-icon" id="refreshBtn">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M13.65 2.35a8 8 0 1 0 .57 11.4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M16 1v4h-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- KPI Cards -->
+        <div class="kpi-grid">
+            <div class="kpi-card">
+                <div class="kpi-header">
+                    <h3>Total Revenue</h3>
+                    <span class="kpi-icon">💰</span>
+                </div>
+                <div class="kpi-value">$2,456,789</div>
+                <div class="kpi-change positive">
+                    <span class="change-icon">↗</span>
+                    <span>+12.5% from last month</span>
+                </div>
+                <div class="kpi-chart">
+                    <canvas id="revenueSparkline"></canvas>
+                </div>
+            </div>
+            
+            <div class="kpi-card">
+                <div class="kpi-header">
+                    <h3>Active Customers</h3>
+                    <span class="kpi-icon">👥</span>
+                </div>
+                <div class="kpi-value">1,247</div>
+                <div class="kpi-change positive">
+                    <span class="change-icon">↗</span>
+                    <span>+8.3% from last month</span>
+                </div>
+                <div class="kpi-chart">
+                    <canvas id="customersSparkline"></canvas>
+                </div>
+            </div>
+            
+            <div class="kpi-card">
+                <div class="kpi-header">
+                    <h3>Conversion Rate</h3>
+                    <span class="kpi-icon">📈</span>
+                </div>
+                <div class="kpi-value">3.2%</div>
+                <div class="kpi-change negative">
+                    <span class="change-icon">↘</span>
+                    <span>-2.1% from last month</span>
+                </div>
+                <div class="kpi-chart">
+                    <canvas id="conversionSparkline"></canvas>
+                </div>
+            </div>
+            
+            <div class="kpi-card">
+                <div class="kpi-header">
+                    <h3>Average Order Value</h3>
+                    <span class="kpi-icon">🛒</span>
+                </div>
+                <div class="kpi-value">$1,967</div>
+                <div class="kpi-change positive">
+                    <span class="change-icon">↗</span>
+                    <span>+5.7% from last month</span>
+                </div>
+                <div class="kpi-chart">
+                    <canvas id="aovSparkline"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Charts Grid -->
+        <div class="charts-grid">
+            <div class="chart-card large">
+                <div class="chart-header">
+                    <h3>Revenue Trend</h3>
+                    <div class="chart-controls">
+                        <button class="chart-btn active" data-period="daily">Daily</button>
+                        <button class="chart-btn" data-period="weekly">Weekly</button>
+                        <button class="chart-btn" data-period="monthly">Monthly</button>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <canvas id="revenueChart"></canvas>
+                </div>
+            </div>
+            
+            <div class="chart-card">
+                <div class="chart-header">
+                    <h3>Sales by Region</h3>
+                </div>
+                <div class="chart-container">
+                    <canvas id="regionChart"></canvas>
+                </div>
+            </div>
+            
+            <div class="chart-card">
+                <div class="chart-header">
+                    <h3>Customer Acquisition</h3>
+                </div>
+                <div class="chart-container">
+                    <canvas id="customerChart"></canvas>
+                </div>
+            </div>
+            
+            <div class="chart-card">
+                <div class="chart-header">
+                    <h3>Product Performance</h3>
+                </div>
+                <div class="chart-container">
+                    <canvas id="productChart"></canvas>
+                </div>
+            </div>
+            
+            <div class="chart-card">
+                <div class="chart-header">
+                    <h3>Sales by Sector</h3>
+                </div>
+                <div class="chart-container">
+                    <canvas id="sectorChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Data Table -->
+        <div class="table-card">
+            <div class="table-header">
+                <h3>Top Performing Products</h3>
+                <div class="table-controls">
+                    <input type="text" placeholder="Search products..." class="table-search" id="productSearch">
+                    <button class="btn btn-outline btn-sm" id="exportTable">Export</button>
+                </div>
+            </div>
+            <div class="table-container">
+                <table class="data-table" id="productsTable">
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Revenue</th>
+                            <th>Units Sold</th>
+                            <th>Growth</th>
+                            <th>Margin</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Premium Widget Pro</td>
+                            <td>$456,789</td>
+                            <td>1,234</td>
+                            <td class="positive">+15.2%</td>
+                            <td>32.5%</td>
+                        </tr>
+                        <tr>
+                            <td>Standard Widget</td>
+                            <td>$234,567</td>
+                            <td>2,456</td>
+                            <td class="positive">+8.7%</td>
+                            <td>28.3%</td>
+                        </tr>
+                        <tr>
+                            <td>Basic Widget</td>
+                            <td>$123,456</td>
+                            <td>3,789</td>
+                            <td class="negative">-2.1%</td>
+                            <td>22.1%</td>
+                        </tr>
+                        <tr>
+                            <td>Widget Accessories</td>
+                            <td>$89,012</td>
+                            <td>1,567</td>
+                            <td class="positive">+12.4%</td>
+                            <td>45.6%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <!-- Voice Control Interface -->
+    <div id="voice-control-container" class="voice-control-container">
+        <button id="voice-control-button" class="voice-control-button">
+            <i class="fas fa-microphone"></i>
+        </button>
+        <div id="voice-control-status" class="voice-status">Click to speak</div>
+    </div>
+
+    <!-- Team Sharing Modal -->
+    <div id="shareModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Share Dashboard</h2>
+                <button class="modal-close" id="closeModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="share-section">
+                    <h3>Share with team members</h3>
+                    <div class="share-input">
+                        <input type="email" placeholder="Enter email address" id="shareEmail">
+                        <select id="sharePermission">
+                            <option value="view">Can view</option>
+                            <option value="edit">Can edit</option>
+                            <option value="admin">Admin</option>
+                        </select>
+                        <button class="btn btn-primary" id="addMember">Add</button>
+                    </div>
+                </div>
+                
+                <div class="share-section">
+                    <h3>Current team members</h3>
+                    <div class="team-members">
+                        <div class="team-member">
+                            <div class="member-avatar">JD</div>
+                            <div class="member-info">
+                                <div class="member-name">John Doe</div>
+                                <div class="member-email">john.doe@company.com</div>
+                            </div>
+                            <div class="member-role">Admin</div>
+                            <button class="member-remove">Remove</button>
+                        </div>
+                        <div class="team-member">
+                            <div class="member-avatar">SM</div>
+                            <div class="member-info">
+                                <div class="member-name">Sarah Miller</div>
+                                <div class="member-email">sarah.miller@company.com</div>
+                            </div>
+                            <div class="member-role">Can edit</div>
+                            <button class="member-remove">Remove</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="share-section">
+                    <h3>Share link</h3>
+                    <div class="share-link">
+                        <input type="text" value="https://powerbi.company.com/dashboard/sales-performance" readonly id="shareLink">
+                        <button class="btn btn-outline" id="copyLink">Copy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Font Awesome for Icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/voice-control.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dataverse - Power BI</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/voice-control.css">
+    <link rel="stylesheet" href="css/content-pages.css">
+</head>
+<body>
+    <div id="navbar-container"></div>
+
+    <main class="container" style="padding-top: 100px;">
+        <a href="index.html" class="back-arrow-link">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Back to Home
+        </a>
+        <h1>Power BI and Dataverse</h1>
+        <p>Integrate Power BI with Microsoft Dataverse to build powerful business applications and reports with a unified data platform.</p>
+        
+        <section class="main-content-section dataverse-feature-section">
+            <h2>What is Dataverse?</h2>
+            <p>Dataverse is a cloud-based data storage and management service that allows you to securely store and manage data used by business applications.</p>
+            <ul>
+                <li>**Unified Data Storage:** A single, secure place for all your business data.</li>
+                <li>**Robust Security:** Role-based security and fine-grained access control.</li>
+                <li>**Scalability:** Scales to meet the needs of your business.</li>
+                <li>**Integration:** Easily integrates with Power Apps, Power Automate, and Power BI.</li>
+            </ul>
+        </section>
+
+        <section class="main-content-section dataverse-benefits-section">
+            <h2>Benefits with Power BI</h2>
+            <p>Connecting Power BI to Dataverse provides several advantages:</p>
+            <ul>
+                <li>**Real-time Insights:** Access to live data for up-to-the-minute reporting.</li>
+                <li>**Simplified Data Access:** Easy data connection without complex ETL processes.</li>
+                <li>**Enhanced Security:** Leverage Dataverse's security model directly in Power BI.</li>
+                <li>**Seamless Experience:** Build and analyze data within the Microsoft ecosystem.</li>
+            </ul>
+        </section>
+
+        <section class="main-content-section learn-more-dataverse">
+            <h2>Learn More</h2>
+            <p>Discover how Dataverse can transform your data strategy.</p>
+            <button class="btn btn-primary">Explore Dataverse Documentation</button>
+        </section>
+    </main>
+
+    <div id="voice-control-container" class="voice-control-container">
+        <button id="voice-control-button" class="voice-control-button">
+            <i class="fas fa-microphone"></i>
+        </button>
+        <div id="voice-control-status" class="voice-status">Click to speak</div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js" crossorigin="anonymous"></script>
+    <script src="js/components.js"></script>
+    <script src="js/voice-control.js"></script>
+</body>
+</html> 

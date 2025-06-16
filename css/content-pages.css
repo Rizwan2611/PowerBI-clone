@@ -1,0 +1,101 @@
+/* Styles for General Content Pages (e.g., Get Started, AI, Guided Tours, Security) */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.main-content-section {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 40px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.main-content-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.main-content-section h1,
+.main-content-section h2 {
+    color: #323130;
+    margin-bottom: 20px;
+}
+
+.main-content-section p {
+    color: #605e5c;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.main-content-section ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.main-content-section ul li {
+    background-color: #f3f2f1;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.main-content-section ul li:hover {
+    background-color: #edebe9;
+}
+
+.main-content-section ul li::before {
+    content: '\2022'; /* Bullet point */
+    color: #0078d4;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-primary {
+    background-color: #0078d4;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #005a9e;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: #e6e6e6;
+    color: #323130;
+    border: 1px solid #d1d1d1;
+}
+
+.btn-secondary:hover {
+    background-color: #d1d1d1;
+    transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .main-content-section {
+        padding: 20px;
+    }
+} 

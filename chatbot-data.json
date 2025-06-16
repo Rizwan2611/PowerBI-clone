@@ -1,0 +1,12 @@
+{
+  "what is power bi": "Power BI is a business analytics service by Microsoft that provides interactive visualizations and business intelligence capabilities with an interface simple enough for end users to create their own reports and dashboards.",
+  "features": "Power BI offers data connectivity, data transformation, interactive dashboards, AI-powered insights, and seamless integration with Microsoft 365 and other services.",
+  "pricing": "Power BI offers a free version, Power BI Pro (paid per user), and Power BI Premium (for enterprise needs). Visit the Pricing section for details.",
+  "security": "Power BI includes built-in security features such as data encryption, role-based access, and compliance with major standards.",
+  "dashboard": "A Power BI dashboard is a single-page, often called a canvas, that uses visualizations to tell a story with your data.",
+  "data sources": "Power BI can connect to hundreds of data sources including Excel, SQL Server, Azure, web APIs, and more.",
+  "ai": "Power BI uses AI to help you find insights in your data, including natural language queries, image recognition, and automated machine learning.",
+  "how to get started": "You can get started with Power BI by signing up for a free account or starting a trial of Power BI Pro.",
+  "contact": "You can contact Microsoft sales or support through the links provided on the website.",
+  "default": "Sorry, I don't have an answer for that. Please try another question about Power BI."
+} 

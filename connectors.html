@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connectors - Power BI</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/voice-control.css">
+    <link rel="stylesheet" href="css/content-pages.css">
+</head>
+<body>
+    <div id="navbar-container"></div>
+
+    <main class="container" style="padding-top: 100px;">
+        <a href="index.html" class="back-arrow-link">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Back to Home
+        </a>
+        <h1>Power BI Connectors</h1>
+        <p>Connect Power BI to hundreds of data sources, on-premises and in the cloud, to get a comprehensive view of your business.</p>
+        
+        <section class="main-content-section connectors-overview-section">
+            <h2>Key Connectors</h2>
+            <p>Power BI offers a vast library of pre-built connectors for popular services and databases:</p>
+            <ul>
+                <li>**Cloud Services:** Azure, Salesforce, Dynamics 365, Google Analytics, Facebook, Mailchimp.</li>
+                <li>**Databases:** SQL Server, Oracle, MySQL, PostgreSQL, Amazon Redshift.</li>
+                <li>**Files:** Excel, CSV, JSON, XML, PDF.</li>
+                <li>**Other Sources:** Web (HTML, JSON), OData feeds, SharePoint lists.</li>
+            </ul>
+        </section>
+
+        <section class="main-content-section custom-connectors-section">
+            <h2>Custom Connectors</h2>
+            <p>If a direct connector isn't available, you can build custom connectors to integrate with any data source that has an API.</p>
+            <ul>
+                <li>**Power Query SDK:** Develop your own connectors using a flexible SDK.</li>
+                <li>**REST APIs:** Connect to web services with RESTful interfaces.</li>
+            </ul>
+        </section>
+
+        <section class="main-content-section learn-more-connectors">
+            <h2>Learn More</h2>
+            <p>Explore the full list of connectors and learn how to use them to unlock your data's potential.</p>
+            <button class="btn btn-primary">View All Connectors</button>
+        </section>
+    </main>
+
+    <div id="voice-control-container" class="voice-control-container">
+        <button id="voice-control-button" class="voice-control-button">
+            <i class="fas fa-microphone"></i>
+        </button>
+        <div id="voice-control-status" class="voice-status">Click to speak</div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js" crossorigin="anonymous"></script>
+    <script src="js/components.js"></script>
+    <script src="js/voice-control.js"></script>
+</body>
+</html>
